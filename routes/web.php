@@ -18,4 +18,5 @@ Route::get('stock', function(){
 Route::get('registro',function(){
 	return view('pages/registro');
 });
+
 ?>
