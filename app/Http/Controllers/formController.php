@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Builder;
 use App\Tiendas;
+use App\Productos;
 
 class FormController extends Controller
 {
@@ -17,11 +18,10 @@ class FormController extends Controller
     	return view('pages/form', array('tiendas'=>$tiendas));
     }
 
-    public function mostrarProductos(Request $request)
+    public function mostrarProductos($nombreTienda)
     {
-    	echo "He entrado";
-    	$tienda = htmlentities($request->input('tienda'));
-    	echo $tienda;
-    	return view('pages/stock', ['tienda' => $tienda]);
+    	$idTienda = DB::table('Tiendas')->where('TiendaNombre', $nombreTienda)->get();
+    	$productos = DB::table('Productos')->get();
+    	return view('pages/stock', array('productos'=>$productos));
     }
 }
