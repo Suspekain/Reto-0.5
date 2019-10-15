@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	</head>
+        @include("layouts.head")
+    </head>
 	<body>
   		<header>
-  		</header>
+            @include("layouts.header")
+        </header>
   		<section>
   			@foreach($productos as $p)
 			    <tr>

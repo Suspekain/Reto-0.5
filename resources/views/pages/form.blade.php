@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Tiendas</title>
+        @include("layouts.head")
     </head>
     <body>
+        <header>
+            @include("layouts.header")
+        </header>
         <form action="" method="get">
             <fieldset>
                 <label>Selecciona una tienda: </label><br>
