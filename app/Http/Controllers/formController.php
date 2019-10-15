@@ -16,16 +16,17 @@ class FormController extends Controller
     	return view('pages/form', array('tiendas'=>$tiendas));
     }
 
-    public function mostrarProductos($nombreTienda)
+    public function mostrarProductos($idTienda)
     {
-    	$idTienda = DB::table('Tiendas')->where('TiendaNombre', $nombreTienda)->get();
-    	$productos = DB::table('Productos')->where('ProductoTienda', $idTienda[0]->idTienda)->get();
-    	return view('pages/stock', array('productos'=>$productos), array('idTienda'=>$idTienda[0]));
+        //Recogemos el id de la tienda pasado por la ruta, recogemos los datos de la tienda en un array y los productos de esa tienda en otro y se lo pasamos a la vista stock
+    	$tienda = Tiendas::where('idTienda', $idTienda)->get();
+    	$productos = Productos::where('ProductoTienda', $tienda[0]->idTienda)->get();
+    	return view('pages/stock', array('productos'=>$productos), array('idTienda'=>$tienda[0]));
     }
 
     public function eliminarProducto($idProducto)
     {
-        var_dump($idProducto);
+        //Recoge el id del producto pasada por la ruta y elimina el producto con ese id en la tabla productos
     	Productos::where('idProducto',$idProducto)->delete();
     	return back();
     }
@@ -33,5 +34,10 @@ class FormController extends Controller
     public function editarProducto($idProducto)
     {
     	
+    }
+
+    public function newProducto($idProducto)
+    {
+        
     }
 }

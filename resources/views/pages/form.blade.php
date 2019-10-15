@@ -12,7 +12,7 @@
                 <label>Selecciona una tienda: </label><br>
                     @foreach($tiendas as $tienda)
                     <div id="{{$tienda->idTienda}}">{{$tienda->TiendaNombre}}</div>
-                    <a href="{{route('stock.tienda',$tienda->TiendaNombre)}}" class="btnedit btnedit-outline-info btnedit-size">Mostrar {{$tienda->TiendaNombre}}</a>
+                    <a href="{{route('stock.tienda',$tienda->idTienda)}}" class="btnedit btnedit-outline-info btnedit-size">Mostrar {{$tienda->TiendaNombre}}</a>
                     @endforeach
                 </select><br>
             </fieldset>
