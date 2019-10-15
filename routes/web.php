@@ -21,4 +21,9 @@ Route::get('registro',function(){
 	return view('pages/registro');
 });
 
+//ruta a crear nuevo producto
+Route::get('crear', function(){
+	return view('pages/crear-producto');
+});
+
 ?>
