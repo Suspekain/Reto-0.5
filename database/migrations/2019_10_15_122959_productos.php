@@ -17,12 +17,9 @@ class Productos extends Migration
             $table->increments('idProducto');
             $table->string('ProductoNombre', 45);
             $table->string('ProductoDescripcion', 256);
-            $table->string('ProductoImagen', 45);
+            $table->string('ProductoImagen', 256);
             $table->integer('ProductoStock');
             $table->string('ProductoEnlace', 45);
-            $table->unsignedInteger('ProductoTienda');
-            //referencia para crear la clave ajena
-            $table->foreign('ProductoTienda')->references('idTienda')->on('Tiendas');
             
             $table->timestamps();
         });
