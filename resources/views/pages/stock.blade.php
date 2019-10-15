@@ -14,7 +14,7 @@
 				  <td>{{$p->idProducto}}</td>
 			      <td>{{$p->ProductoNombre}}</td>
 			      <td>{{$p->ProductoDescripcion}}</td>
-			      <td><a href="" class="btnedit btnedit-outline-info btnedit-size">Info</a></td>
+			      <td><a href="{{route('stock.eliminar',$p->idProducto)}}">Eliminar</a></td>
 			    </tr><br>
   			@endforeach
   		</section>

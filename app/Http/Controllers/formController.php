@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Facades\DB;
 use App\Tiendas;
 use App\Productos;
 
@@ -23,5 +21,17 @@ class FormController extends Controller
     	$idTienda = DB::table('Tiendas')->where('TiendaNombre', $nombreTienda)->get();
     	$productos = DB::table('Productos')->where('ProductoTienda', $idTienda[0]->idTienda)->get();
     	return view('pages/stock', array('productos'=>$productos), array('idTienda'=>$idTienda[0]));
+    }
+
+    public function eliminarProducto($idProducto)
+    {
+        var_dump($idProducto);
+    	Productos::where('idProducto',$idProducto)->delete();
+    	return back();
+    }
+
+    public function editarProducto($idProducto)
+    {
+    	
     }
 }
