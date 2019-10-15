@@ -7,6 +7,7 @@
   		<header>
             @include("layouts.header")
         </header>
+        <h2>{{$idTienda->TiendaNombre}}</h2>
   		<section>
   			@foreach($productos as $p)
 			    <tr>
