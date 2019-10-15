@@ -6,7 +6,7 @@
         <title>Inicio de sesion</title>
     </head>
     <body>
-        <form action="form.productos" method="post">
+        <form action="" method="get">
             <fieldset>
                 <label>Selecciona una tienda: </label><br>
                 <select size="1" name="tienda" id="lista" required>
@@ -14,7 +14,7 @@
                     <option value="{{$tienda->TiendaNombre}}">{{$tienda->TiendaNombre}}</option>
                     @endforeach
                 </select><br>
-                <input type="submit" name="seleccionar" value="Seleccionar">
+                <a href="{{route('formProductos',$tienda->TiendaNombre)}}" class="btnedit btnedit-outline-info btnedit-size">Prueba</a>
             </fieldset>
         </form>
     </body>

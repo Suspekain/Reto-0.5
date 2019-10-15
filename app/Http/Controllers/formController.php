@@ -19,8 +19,9 @@ class FormController extends Controller
 
     public function mostrarProductos(Request $request)
     {
-    	$tienda = $request->input('tienda');
+    	echo "He entrado";
+    	$tienda = htmlentities($request->input('tienda'));
     	echo $tienda;
-    	return view('welcome');
+    	return view('pages/stock', ['tienda' => $tienda]);
     }
 }

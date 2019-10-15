@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Ametzondo</title>
-	<link rel="stylesheet" type="text/css" href="public/css/estilo.css">
-</head>
+@extends("layouts.plantilla")
 <body>
 	<header>
-		<h1>Ametzondo</h1>
-		<div id="candado">img</div>
-	</header>
+    @include("layouts.header")
+  	</header>
 	<nav>
 		<ul>
 			<li>crear nuevo producto</li>
@@ -134,6 +128,5 @@
 			<p>domingo  Cerrado</p>
 		</section>
 	</section>
-
 </body>
 </html>

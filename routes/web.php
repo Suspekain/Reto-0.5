@@ -8,11 +8,11 @@ Route::get('/', function () {
 //Ruta para la vista del formulario
 Route::get("/form", 'formController@mostrarTienda')->name('form.tienda');
 //Ruta para el controlador del formulario
-Route::post('formControl', 'FormController@mostrarProducto')->name('form.productos');
+Route::get('/formControl', 'formController@mostrarProductos')->name('formProductos');
 
 //ruta al stock
 Route::get('stock', function(){
-	return view('pages/stock');
+	return view('pages/stock')->name('stock');
 });
 
 Route::get('registro',function(){
