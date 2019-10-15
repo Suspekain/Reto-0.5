@@ -6,7 +6,7 @@
         <title>Inicio de sesion</title>
     </head>
     <body>
-        <form action="formControl" method="post">
+        <form action="form.productos" method="post">
             <fieldset>
                 <label>Selecciona una tienda: </label><br>
                 <select size="1" name="tienda" id="lista" required>

@@ -92,7 +92,7 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="{{route('form')}}">form</a>
+                    <a href="{{route('form.tienda')}}">form</a>
                 </div>
             </div>
         </div>
