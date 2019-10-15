@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <meta charset="utf-8">
-        <title>Inicio de sesion</title>
+        <title>Tiendas</title>
     </head>
     <body>
         <form action="" method="get">

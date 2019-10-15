@@ -21,7 +21,7 @@ class FormController extends Controller
     public function mostrarProductos($nombreTienda)
     {
     	$idTienda = DB::table('Tiendas')->where('TiendaNombre', $nombreTienda)->get();
-    	$productos = DB::table('Productos')->get();
+    	$productos = DB::table('Productos')->where('ProductoTienda', $idTienda[0]->idTienda)->get();
     	return view('pages/stock', array('productos'=>$productos));
     }
 }
