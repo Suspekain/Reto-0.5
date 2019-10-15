@@ -22,8 +22,6 @@ class Historico extends Migration
             $table->string('HistoricoEnlace', 45);
             $table->integer('HistoricoTienda');
             $table->dateTime('HistoricoFecha');
-            
-            $table->timestamps();
         });
     }
 

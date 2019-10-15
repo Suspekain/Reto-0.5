@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c30012;
+}
+
+.ametzondologo {
+  width: 25%;
+}
+
+.candado {
+  width: 3%;
+  height: 3%;
+}
+
+.tienda {
+  text-align: center;
+}
+
+.logotienda {
+  width: 200px;
+}
+
+.logotienda>img {
+  width: 100%;
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 15% 0 15%;
+}
+
+.producto {
+  height: 300px;
+}
+
+.imagenproducto {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #c30012;
+  width: 100%;
+}
+
+.mapa {
+  width: 70%;
+}
+
+.footerderecha {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+.mapa>iframe {
+  width: 100%;
+}
+
+.horario {
+  padding-left: 5%;
+  width: 70%;
+}
+
+
+#rh{
+  text-align: center;
+}
+#bodyregistro{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background-color: #34495E;
+}
+
+#formregistro{
+  margin: 20px auto;
+  padding: 20px;
+}
+
