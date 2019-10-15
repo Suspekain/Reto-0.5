@@ -20,8 +20,6 @@ class Productos extends Migration
             $table->string('ProductoImagen', 256);
             $table->integer('ProductoStock');
             $table->string('ProductoEnlace', 45);
-            
-            $table->timestamps();
         });
     }
 

@@ -10,10 +10,9 @@
             <fieldset>
                 <label>Selecciona una tienda: </label><br>
                 <select size="1" name="tienda" id="lista" required>
-                    <option value="zara">Zara</option>
-                    <option value="berska">Berska</option>
-                    <option value="pull&bear">Pull&Bear</option>
-                    <option value="springfield">Springfield</option>
+                    @foreach($tiendas as $tienda)
+                    <option value="{{$tienda->TiendaNombre}}">{{$tienda->TiendaNombre}}</option>
+                    @endforeach
                 </select><br>
                 <input type="submit" name="seleccionar" value="Seleccionar">
             </fieldset>

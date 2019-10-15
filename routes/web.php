@@ -15,8 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 //Ruta para la vista del formulario
-Route::get("form", function(){
-	return view('pages/form');
-});
+Route::get("pages/form", 'formController@mostrar')->name('form');
 //Ruta para el controlador del formulario
-Route::post('formControl', 'FormController@insert');
+//Route::post('formControl', 'FormController@mostrar');
