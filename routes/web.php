@@ -11,6 +11,7 @@ Route::get("/form", 'formController@mostrarTienda')->name('form.tienda');
 Route::get('/stock/{nombreTienda}', 'formController@mostrarProductos')->name('stock.tienda');
 Route::get('/stock/eliminar/{idProducto}', 'formController@eliminarProducto')->name('stock.eliminar');
 Route::get('/stock/editar/{idProducto}', 'formController@editarProducto')->name('stock.editar');
+Route::get('/stock/crear', 'formController@crearProducto')->name('form.crear');
 
 //ruta al stock
 Route::get('stock', function(){

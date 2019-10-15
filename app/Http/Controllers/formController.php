@@ -36,8 +36,13 @@ class FormController extends Controller
     	
     }
 
-    public function newProducto($idProducto)
+    public function newProducto(Request $request)
     {
-        
+        $producto = new Productos();
+        $producto->ProductoNombre = htmlentities($request->input('nombre'));
+        $producto->ProductoDescripcion = htmlentities($request->input('desc'));
+        $aseo->img = $request->input('img');
+        $aseo->dir = htmlentities($request->input('dir'));
+        $aseo->horas24 = $request->input('24h')==1;
     }
 }
