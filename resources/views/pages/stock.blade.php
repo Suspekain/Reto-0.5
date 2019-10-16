@@ -9,7 +9,7 @@
 	</header>
 	<section>
 		<h2>{{$idTienda->TiendaNombre}}</h2>
-		<a href="{{route('crear', $idTienda->idTienda)}}">Crear nuevo producto</a>
+		<a href="{{route('crear', $idTienda->idTienda)}}">@lang('stock.newPro')</a>
 		<table class="tablaproductos">
 			<tr class="productos-indice">
 				<th>ID</th>
