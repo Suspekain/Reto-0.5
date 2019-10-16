@@ -11,7 +11,7 @@
     @foreach($tiendas as $tienda)
     <div class="tienda">
       <div class="logotienda">
-        <div><img class="imagenproducto" src="/img/tiendas/{{$tienda->TiendaLogo}}"></div>
+        <img src="/img/tiendas/{{$tienda->TiendaLogo}}">
       </div>
       <div class="productos">
         <div class="producto">
