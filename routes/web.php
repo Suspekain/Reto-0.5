@@ -30,4 +30,12 @@ Route::get('crear/{idTienda}',function($idTienda){
   $tienda = DB::table('Tiendas')->where('idTienda', $idTienda)->get();
   return view('pages/crear-producto', array('idTienda'=>$idTienda));
 })->name('crear');
+
+//routas lenguaje
+Route::get('locale/{locale}', function ($locale) {
+	var_dump($locale);
+    App::setLocale($locale);
+    return \Redirect::back();
+})->name('locale');
+
 ?>
