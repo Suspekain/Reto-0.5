@@ -19,6 +19,7 @@
           @if($producto->ProductoTienda === $tienda->idTienda)
           <div>{{$producto->ProductoNombre}}</div>
           <img class="imagenproducto" src="/img/productos/{{$producto->ProductoImagen}}">
+          <a href="{{route('producto.mostrar', $producto->idProducto)}}">Ver</a>
           @endif
           @endforeach
         </div>
