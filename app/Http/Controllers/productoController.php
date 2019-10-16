@@ -39,13 +39,14 @@ class productoController extends Controller
     public function newProducto(Request $request)
     {
         $producto = new Productos();
-        $producto->ProductoNombre = htmlentities($request->input('nombre'));
-        $producto->ProductoDescripcion = htmlentities($request->input('desc'));
+        $producto->ProductoNombre = $request->input('nombre');
+        $producto->ProductoDescripcion = $request->input('desc');
         $producto->ProductoImagen = $request->input('img');
-        $producto->stock = htmlentities($request->input('stock'));
-        $producto->enlace = htmlentities($request->input('enlace'));
+        $producto->ProductoStock = $request->input('stock');
+        $producto->ProductoEnlace = $request->input('enlace');
+        $producto->ProductoTienda = $request->input('idTienda');
 
         $producto->save();
-        return redirect()->route('/');
+        return redirect()->route('stock.tienda', $producto->ProductoTienda);
     }
 }

@@ -8,9 +8,9 @@
     <header>
       @include("layouts.header")
     </header>
-    <form class="productonuevo" action="{{route('stock.crear')}}" method="post" enctype="multipart/form-data">
+    <form class="productonuevo" action="{{route('stock.crear',$idTienda ?? ''->idTienda)}}" method="get" enctype="multipart/form-data">
       @csrc
-      <input type="text" id="idTienda" name="idTienda" value="{{$idTienda}}" hidden>
+      <input type="text" id="idTienda" name="idTienda" value="{{$idTienda ?? ''->idTienda}}" hidden>
       <label>Crear nuevo producto:</label><br><br><br>
       <label>Nombre: </label>
       <input type="text" maxlength="45" name="nombre" id="nombre"><br><br><br>

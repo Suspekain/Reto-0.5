@@ -8,7 +8,7 @@
 		@include("layouts.header")
 	</header>
 	<section>
-		<h2>{{$idTienda->TiendaNombre}}</h2>
+		<h2>{{$idTienda->TiendaNombre}}{{$idTienda->idTienda}}</h2>
 		<a href="{{route('crear', $idTienda->idTienda)}}">Crear nuevo producto</a>
 		<table border="1px">
 			<tr>
