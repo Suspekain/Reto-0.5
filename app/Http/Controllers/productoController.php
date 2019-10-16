@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 use App\Tiendas;
 use App\Productos;
 
-class FormController extends Controller
+class productoController extends Controller
 {
     public function mostrarTienda(){
 		//codigo para hacer la consulta
@@ -41,8 +41,11 @@ class FormController extends Controller
         $producto = new Productos();
         $producto->ProductoNombre = htmlentities($request->input('nombre'));
         $producto->ProductoDescripcion = htmlentities($request->input('desc'));
-        $aseo->img = $request->input('img');
-        $aseo->dir = htmlentities($request->input('dir'));
-        $aseo->horas24 = $request->input('24h')==1;
+        $producto->ProductoImagen = $request->input('img');
+        $producto->stock = htmlentities($request->input('stock'));
+        $producto->enlace = htmlentities($request->input('enlace'));
+
+        $producto->save();
+        return redirect()->route('/');
     }
 }

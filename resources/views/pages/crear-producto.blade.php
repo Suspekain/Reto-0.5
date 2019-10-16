@@ -7,7 +7,7 @@
     <header>
       @include("layouts.header")
     </header>
-    <form class="productonuevo" action="form.crear" method="get">
+    <form class="productonuevo" action="" method="get">
       <label>Crear nuevo producto:</label><br><br><br>
       <label>Nombre: </label>
       <input type="text" name="nombre" maxlength="45"/><br><br><br>
@@ -18,8 +18,8 @@
       <label>Stock: </label>
       <input type="text" name="stock" /><br><br><br>
       <label>Enlace</label>
-      <input type="text" value="http://"/><br><br><br>
-      <button type="button" name="button">Crear Producto</button>
+      <input type="text" name="enlace" value="http://"/><br><br><br>
+      <button type="button" name="button"><a href="{{route('stock.crear')}}">Crear Producto</a></button>
     </form>
   </body>
 </html>
