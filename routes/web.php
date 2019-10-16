@@ -2,9 +2,7 @@
 
 /*RUTAS*/
 
-Route::get('/', function () {
-  return view('pages/index');
-});
+Route::get('/', 'productoController@index')->name('index');
 //Ruta para la vista del formulario
 Route::get("/form", 'productoController@mostrarTienda')->name('form.tienda');
 //Rutas para el controlador de producto

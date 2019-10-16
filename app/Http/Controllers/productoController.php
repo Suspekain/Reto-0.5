@@ -9,6 +9,12 @@ use App\Productos;
 
 class productoController extends Controller
 {
+  public function index(){
+    //codigo para hacer la consulta
+    $tiendas = DB::table('Tiendas')->get();
+    $productos = Productos::all();
+      return view('pages/index', array('tiendas'=>$tiendas), array('productos'=>$productos));
+  }
 
   public function mostrarTienda(){
     //codigo para hacer la consulta
