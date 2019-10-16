@@ -30,4 +30,5 @@ Route::get('crear/{idTienda}',function($idTienda){
   $tienda = DB::table('Tiendas')->where('idTienda', $idTienda)->get();
   return view('pages/crear-producto', array('idTienda'=>$idTienda));
 })->name('crear');
+
 ?>
