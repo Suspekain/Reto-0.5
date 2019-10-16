@@ -8,8 +8,8 @@
 		@include("layouts.header")
 	</header>
 	<section>
-		<h2>{{$idTienda->TiendaNombre}}</h2>
-		<a href="/crear">Crear nuevo producto</a>
+		<h2>{{$idTienda->TiendaNombre}}{{$idTienda->idTienda}}</h2>
+		<a href="{{route('crear', $idTienda->idTienda)}}">Crear nuevo producto</a>
 		<table border="1px">
 			<tr>
 				<th>ID</th>
@@ -21,6 +21,7 @@
 				<td>{{$p->idProducto}}</td>
 				<td>{{$p->ProductoNombre}}</td>
 				<td>{{$p->ProductoDescripcion}}</td>
+				<td><a href="{{route('stock.editar',$p->idProducto)}}">Editar</a></td>
 				<td><a href="{{route('stock.eliminar',$p->idProducto)}}">Eliminar</a></td>
 			</tr><br>
 			@endforeach
