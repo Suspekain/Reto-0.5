@@ -11,7 +11,7 @@ use App\Productos;
 class productoController extends Controller
 {
     public function mostrarTienda(){
-		//codigo para hacer la consulta
+		//codigo para hacer la consulta y que devuelva un array con todas las tiendas a la vista
 		$tiendas = DB::table('Tiendas')->get();
     	return view('pages/form', array('tiendas'=>$tiendas));
     }
