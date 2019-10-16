@@ -9,7 +9,7 @@
 	</header>
 	<section>
 		<h2>{{$idTienda->TiendaNombre}}</h2>
-		<a href="/crear">Crear nuevo producto</a>
+		<a href="{{route('crear', $idTienda->idTienda)}}">Crear nuevo producto</a>
 		<table border="1px">
 			<tr>
 				<th>ID</th>
