@@ -8,7 +8,6 @@
     @include("layouts.header")
   </header>
   <section>
-
     @foreach($tiendas as $tienda)
     <div class="tienda">
       <div class="logotienda">
