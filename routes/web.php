@@ -23,8 +23,8 @@ Route::get('registro',function(){
 });
 
 //ruta a crear nuevo producto
-Route::get('crear', function(){
+Route::get('crear',function(){
 	return view('pages/crear-producto');
 });
-
+Route::post('/stock/{nombreTienda}', 'formController@insertar') -> name('insertar');
 ?>
