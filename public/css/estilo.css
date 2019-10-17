@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#mapa {
+  width: 50%;
+}
+
+#mapa>iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.tienda {
+  background-color: grey;
+}
+
+.productos {
+  display: flex;
+  background-color: green;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 3% 15% 3% 15%;
+}
+
+.producto {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+}
+
+.producto>img {
+  height: 100%;
+  width: auto;
+}
