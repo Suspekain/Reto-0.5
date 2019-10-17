@@ -11,3 +11,9 @@ Route::get("form", function(){
 });
 //Ruta para el controlador del formulario
 Route::post('formControl', 'FormController@insert');
+
+//ruta al stock
+Route::get('stock', function(){
+	return view('pages/index');
+});
+?>
