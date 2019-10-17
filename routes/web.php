@@ -16,4 +16,7 @@ Route::post('formControl', 'FormController@insert');
 Route::get('stock', function(){
 	return view('pages/index');
 });
+Route::get('registro',function(){
+	return view('pages/registro');
+});
 ?>

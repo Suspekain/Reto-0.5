@@ -160,3 +160,19 @@ header {
   height: 200px;
 }
 
+#rh{
+  text-align: center;
+}
+#bodyregistro{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background-color: #34495E;
+}
+
+#formregistro{
+  margin: 20px auto;
+  padding: 20px;
+}
