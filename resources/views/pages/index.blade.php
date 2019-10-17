@@ -7,7 +7,10 @@
   <title>Ametzondo</title>
 </head>
 <body>
-  <h1>Ametzondo</h1>
+  <header>
+      <img class="ametzondologo" src="{{url('/img/ametzondologo.png')}}" alt="Ametzondo logoa"/>
+      <img class="candado" src="{{url('/img/candado.png')}}" alt="candado"/>
+  </header>
   <section>
     <div class="tienda">
       <h2>Tienda1</h2>
