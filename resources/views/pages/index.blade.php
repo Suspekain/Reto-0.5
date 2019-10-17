@@ -1,9 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @include("layouts.head")
+</head>
 <body>
   <header>
     @include("layouts.header")
   </header>
-
-
   <section>
     <div class="tienda">
       <h2>Tienda1</h2>
@@ -57,8 +60,8 @@
       </div>
     </div>
   </section>
-
-  @section("footer")
-
-  @endsection
+  <footer>
+    @include("layouts.footer")
+  </footer>
 </body>
+</html>
