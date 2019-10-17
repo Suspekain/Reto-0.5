@@ -1,8 +1,8 @@
-@extends("layouts.plantilla")
 <body>
-  @section("header")
+  <header>
+    @include("layouts.header")
+  </header>
 
-  @endsection
 
   <section>
     <div class="tienda">
@@ -57,10 +57,8 @@
       </div>
     </div>
   </section>
-  
-  @section("footer")
 
+  @section("footer")
 
   @endsection
 </body>
-</html>
