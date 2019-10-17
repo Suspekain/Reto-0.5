@@ -19,8 +19,15 @@ header {
 }
 
 .tienda {
-  background-color: rgb(255, 223, 225);
   text-align: center;
+}
+
+.logotienda {
+  width: 200px;
+}
+
+.logotienda>img {
+  width: 100%;
 }
 
 .productos {
@@ -32,13 +39,12 @@ header {
 }
 
 .producto {
-  height: 200px;
-  width: 200px;
+  height: 300px;
 }
 
-.producto img {
-  height: 100%;
-  width: auto;
+.imagenproducto {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 footer {
