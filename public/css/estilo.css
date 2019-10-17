@@ -56,7 +56,6 @@ footer {
 .footerderecha {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   width: 30%;
 }
 
@@ -65,5 +64,6 @@ footer {
 }
 
 .horario {
-  padding-left: 3%
+  padding-left: 5%;
+  width: 70%;
 }
