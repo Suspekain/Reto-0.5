@@ -29,6 +29,8 @@
       </div>
     </div>
 
+    <hr>
+
     <div class="tienda">
       <div class="logotienda">
         <img src="img/tiendas/carrefour.png" alt="carrefour">
@@ -49,6 +51,8 @@
       </div>
     </div>
 
+    <hr>
+
     <div class="tienda">
       <div class="logotienda">
         <img src="img/tiendas/celio.png" alt="celio">
@@ -68,6 +72,8 @@
         </div>
       </div>
     </div>
+
+    <hr>
 
     <div class="tienda">
       <div class="logotienda">
