@@ -10,6 +10,6 @@ class Productos extends Model
 	protected $table = 'Productos';
     public function tienda()
     {
-        return $this->belongsTo('App\Tiendas', 'idTienda');
+        return $this->belongsTo('App\Tiendas', 'idTienda')->withPivot('idTienda');
     }
 }
