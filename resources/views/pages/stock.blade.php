@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        @include("layouts.head")
-    </head>
-	<body>
-  		<header>
-            @include("layouts.header")
-        </header>
-        <h2>{{$idTienda->TiendaNombre}}</h2>
-  		<section>
-  			@foreach($productos as $p)
-			    <tr>
-				  <td>{{$p->idProducto}}</td>
-			      <td>{{$p->ProductoNombre}}</td>
-			      <td>{{$p->ProductoDescripcion}}</td>
-			      <td><a href="{{route('stock.eliminar',$p->idProducto)}}">Eliminar</a></td>
-			    </tr><br>
-  			@endforeach
-  		</section>
-	</body>
+<head>
+	@include("layouts.head")
+</head>
+<body>
+	<header>
+		@include("layouts.header")
+	</header>
+	<section>
+		<h2>{{$idTienda->TiendaNombre}}</h2>
+		<a href="/crear">Crear nuevo producto</a>
+		<table border="1px">
+			<tr>
+				<th>ID</th>
+				<th>Nombre</th>
+				<th>Descripcion</th>
+			</tr>
+			@foreach($productos as $p)
+			<tr>
+				<td>{{$p->idProducto}}</td>
+				<td>{{$p->ProductoNombre}}</td>
+				<td>{{$p->ProductoDescripcion}}</td>
+				<td><a href="{{route('stock.eliminar',$p->idProducto)}}">Eliminar</a></td>
+			</tr><br>
+			@endforeach
+		</table>
+	</section>
+</body>
 </html>
