@@ -34,9 +34,4 @@ class FormController extends Controller
   {
 
   }
-
-  public function insertar(Request $request, $nombreTienda)
-  {
-    echo "insertar en la BBDD";
-  }
 }
