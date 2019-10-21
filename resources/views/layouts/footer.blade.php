@@ -5,21 +5,19 @@
   <div class="footerderecha">
     <div class="horario">
       <h4>Horarios:</h4>
-      <ul>
-        <li>Lunes: 10:00 - 20:00</li>
-        <li>Martes: 10:00 - 20:00</li>
-        <li>Miercoles: 10:00 - 20:00</li>
-        <li>Jueves: 10:00 - 20:00</li>
-        <li>Viernes: 10:00 - 20:00</li>
-        <li>Sabado: 10:00 - 20:00</li>
-        <li>Domingo: cerrado</li>
-      </ul>
+      <p>
+        Lunes: 10:00 - 20:00<br>
+        Martes: 10:00 - 20:00<br>
+        Miercoles: 10:00 - 20:00<br>
+        Jueves: 10:00 - 20:00<br>
+        Viernes: 10:00 - 20:00<br>
+        Sabado: 10:00 - 20:00<br>
+        Domingo: cerrado
+      </p>
     </div>
     <div class="enlaces">
-      <li><a href="https://www.ametzondoshopping.com/es-es">Ametzondo</a></li>
-      <li><a href="http://ikea.com">Ikea</a></li>
+      
     </div>
   </div>
-
-
+  <p class="copy">&copy; Copyright . 2019</p>
 </footer>

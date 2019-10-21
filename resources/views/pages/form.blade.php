@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-        <meta charset="utf-8">
-        <title>Inicio de sesion</title>
+        @include("layouts.head")
     </head>
     <body>
-        <form action="formControl" method="post">
+        <header>
+            @include("layouts.header")
+        </header>
+        <form action="" method="get">
             <fieldset>
                 <label>Selecciona una tienda: </label><br>
-                <select size="1" name="tienda" id="lista" required>
-                    <option value="zara">Zara</option>
-                    <option value="berska">Berska</option>
-                    <option value="pull&bear">Pull&Bear</option>
-                    <option value="springfield">Springfield</option>
+                    @foreach($tiendas as $tienda)
+                    <div id="{{$tienda->idTienda}}">{{$tienda->TiendaNombre}}</div>
+                    <a href="{{route('stock.tienda',$tienda->TiendaNombre)}}" class="btnedit btnedit-outline-info btnedit-size">Mostrar {{$tienda->TiendaNombre}}</a>
+                    @endforeach
                 </select><br>
-                <input type="submit" name="seleccionar" value="Seleccionar">
             </fieldset>
         </form>
     </body>
