@@ -8,7 +8,8 @@
   <header>
     @include("layouts.header")
   </header>
-  <form class="productonuevo" action="{{route('insertar', 'ikea')}}" method="post">
+  <form class="productonuevo" action="{{route('insertar', 'ikea')}}" method="post" enctype="multipart/form-data">
+    @csrc
     <label>Crear nuevo producto:</label><br><br><br>
     <label>Nombre: </label>
     <input type="text" maxlength="45" id="nombre"><br><br><br>
