@@ -119,3 +119,20 @@ footer {
   margin-top: 10px;
 }
 /**/
+
+/*STOCK*/
+.tablaproductos {
+  width:90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-collapse: collapse;
+}
+
+.productos-indice{
+  height:40px;
+}
+
+.productos-productos{
+  height: 30px;
+}
+/**/

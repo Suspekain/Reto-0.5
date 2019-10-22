@@ -3,7 +3,7 @@
 /*RUTAS*/
 
 Route::get('/', function () {
-    return view('pages/index');
+  return view('pages/index');
 });
 //Ruta para la vista del formulario
 Route::get("/form", 'productoController@mostrarTienda')->name('form.tienda');
@@ -16,20 +16,20 @@ Route::get('/stock/crear/{idTienda}', 'productoController@newProducto')->name('s
 
 //ruta al stock
 Route::get('stock', function(){
-	return view('pages/stock');
+  return view('pages/stock');
 });
 
 Route::get('registro',function(){
-	return view('pages/registro');
+  return view('pages/registro');
 });
 //ruta editar producto
 Route::get('editar/{idProducto}',function(){
-	return view('pages/editar-producto');
+  return view('pages/editar-producto');
 })->name('editar');
 
 //ruta a crear nuevo producto
 Route::get('crear/{idTienda}',function($idTienda){
-	$tienda = DB::table('Tiendas')->where('idTienda', $idTienda)->get();
-	return view('pages/crear-producto', array('idTienda'=>$idTienda));
+  $tienda = DB::table('Tiendas')->where('idTienda', $idTienda)->get();
+  return view('pages/crear-producto', array('idTienda'=>$idTienda));
 })->name('crear');
 ?>
