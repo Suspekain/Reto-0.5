@@ -15,13 +15,16 @@
 				<th>ID</th>
 				<th>Nombre</th>
 				<th>Descripcion</th>
+				<th>Imagen</th>
+				<th>Stock</th>
 			</tr>
 			@foreach($productos as $p)
 			<tr>
 				<td>{{$p->idProducto}}</td>
 				<td>{{$p->ProductoNombre}}</td>
 				<td>{{$p->ProductoDescripcion}}</td>
-				<td><a href="{{route('stock.editar',$p->idProducto)}}">Editar</a></td>
+				<td>{{$p->ProductoImagen}}</td>
+				<td>{{$p->ProductoStock}} <a href="{{route('stock.editar',$p->idProducto)}}">Editar</a></td>
 				<td><a href="{{route('stock.eliminar',$p->idProducto)}}">Eliminar</a></td>
 			</tr><br>
 			@endforeach

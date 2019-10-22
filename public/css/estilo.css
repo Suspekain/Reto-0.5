@@ -1,3 +1,8 @@
+@font-face {
+  font-family: FuenteGeneral;
+  src: url('/fonts/BaronNeue.otf');
+}
+
 * {
   margin: 0;
   padding: 0;
