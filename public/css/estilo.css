@@ -1,3 +1,8 @@
+@font-face {
+  font-family: FuenteGeneral;
+  src: url('/fonts/BaronNeue.otf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,8 +55,7 @@ header {
 }
 
 .imagenproducto {
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 150px;
 }
 
 /*estilo del footer*/
@@ -112,5 +116,22 @@ footer {
 .productonuevo {
   text-align: center;
   margin-top: 10px;
+}
+/**/
+
+/*STOCK*/
+.tablaproductos {
+  width:90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-collapse: collapse;
+}
+
+.productos-indice{
+  height:40px;
+}
+
+.productos-productos{
+  height: 30px;
 }
 /**/
