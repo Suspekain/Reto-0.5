@@ -8,6 +8,8 @@ use App\Tiendas;
 class Productos extends Model
 {
 	protected $table = 'Productos';
+	public $timestamps = false;
+	
     public function tienda()
     {
         return $this->belongsTo('App\Tiendas', 'idTienda')->withPivot('idTienda');
