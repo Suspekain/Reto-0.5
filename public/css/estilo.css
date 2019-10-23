@@ -135,6 +135,7 @@ footer {
 }
 body{
   width: 98%;
+  margin: 0px auto;
 }
 
 /*estilo del header*/
