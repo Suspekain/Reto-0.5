@@ -5,6 +5,7 @@
     </head>
 
 <body id="bodyregistro">
+
 	  		<header>
             @include("layouts.header")
         </header>
@@ -15,7 +16,7 @@
 		<dir id="datregistro">		
 		<label class="trn" data-trn-key="nombre">Nombre: </label><input type="text" name="nombre"><br><br>
 		<label class="trn" data-trn-key="imagen">imagen: </label><input type="file" name="imagendelproducto" alt="seleccione una imagen"><br><br>
-		<label class="trn" data-trn-key="stock actual">Stock actual: </label><input type="number" name="stockactual"><br><br><br><br>
+		<label class="trn" data-trn-key="stock">Stock actual: </label><input type="number" name="stockactual"><br><br><br><br>
 		</dir>
 
 		<input type="submit" value="registrar producto" name="">
