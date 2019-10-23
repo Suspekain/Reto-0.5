@@ -8,8 +8,8 @@
     <header>
       @include("layouts.header")
     </header>
-    <form class="productonuevo" action="{{route('stock.crear',$idTienda ?? ''->idTienda)}}" method="get" enctype="multipart/form-data">
-      @csrc
+    <form class="productonuevo" action="{{route('stock.crear',$idTienda ?? ''->idTienda)}}" method="post" enctype="multipart/form-data">
+      @csrf
       <input type="text" id="idTienda" name="idTienda" value="{{$idTienda ?? ''->idTienda}}" hidden>
       <label>Crear nuevo producto:</label><br><br><br>
       <label>Nombre: </label>

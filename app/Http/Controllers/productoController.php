@@ -36,7 +36,7 @@ class productoController extends Controller
         //recoger el id del producto y le pasa el objeto producto con todos los datos del producto equivalente al id que recibimos a la vista editar-producto
         $producto=Productos::where('idProducto',$idProducto)->first();
         return view('pages/editar-producto', array('producto'=>$producto));
-    	
+
     }
 
     public function updateProducto(Request $request)
@@ -47,7 +47,7 @@ class productoController extends Controller
               ->update(['ProductoStock' => $request->input('stock')]);
         $pUpdated = Productos::where('idProducto', $request->input('idProducto'))->first();
         return redirect()->route('stock.tienda', $pUpdated->ProductoTienda);
-        
+
     }
 
     public function newProducto(Request $request)
@@ -56,7 +56,10 @@ class productoController extends Controller
         $producto = new Productos();
         $producto->ProductoNombre = $request->input('nombre');
         $producto->ProductoDescripcion = $request->input('desc');
-        $producto->ProductoImagen = $request->input('img');
+        //imagen
+        $producto->ProductoImagen = $request->file('img')->getClientOriginalName();
+        $request->file('img')->move('img/productos', $producto->ProductoImagen);
+        //
         $producto->ProductoStock = $request->input('stock');
         $producto->ProductoEnlace = $request->input('enlace');
         $producto->ProductoTienda = $request->input('idTienda');
@@ -64,4 +67,5 @@ class productoController extends Controller
         $producto->save();
         return redirect()->route('stock.tienda', $producto->ProductoTienda);
     }
+
 }
