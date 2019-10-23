@@ -9,10 +9,11 @@ use App\Productos;
 
 class productoController extends Controller
 {
+
   public function mostrarTienda(){
     //codigo para hacer la consulta
     $tiendas = DB::table('Tiendas')->get();
-    return view('pages/form', array('tiendas'=>$tiendas));
+    	return view('pages/form', array('tiendas'=>$tiendas));
   }
 
   public function mostrarProductos($idTienda)

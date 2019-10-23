@@ -7,7 +7,7 @@ Route::get('/', function () {
 });
 //Ruta para la vista del formulario
 Route::get("/form", 'productoController@mostrarTienda')->name('form.tienda');
-//Ruta para el controlador del formulario
+//Rutas para el controlador de producto
 Route::get('/stock/{idTienda}', 'productoController@mostrarProductos')->name('stock.tienda');
 Route::get('/stock/eliminar/{idProducto}', 'productoController@eliminarProducto')->name('stock.eliminar');
 Route::get('/stock/editar/{idProducto}', 'productoController@editarProducto')->name('stock.editar');
