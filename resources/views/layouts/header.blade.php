@@ -5,4 +5,4 @@
   <a href="#">en</a>
   <a href="#">fr</a>
 </div>
-<a class="candado" href="form"><img class="candadologo" src="{{url('/img/candado.png')}}" alt="candado"/></a>
+<a class="candado" href="/form"><img class="candadologo" src="{{url('/img/candado.png')}}" alt="candado"/></a>
