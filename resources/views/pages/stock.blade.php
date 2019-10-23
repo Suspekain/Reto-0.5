@@ -24,7 +24,7 @@
 				<td>{{$p->idProducto}}</td>
 				<td>{{$p->ProductoNombre}}</td>
 				<td>{{$p->ProductoDescripcion}}</td>
-				<td>{{$p->ProductoImagen}}</td>
+				<td><img style="height: 150px" src="/img/productos/{{$p->ProductoImagen}}"></td>
 				<td>{{$p->ProductoStock}} <a href="{{route('stock.editar',$p->idProducto)}}"><img style="width: 30px" src="/img/edit.png"></a></td>
 				<td style="text-align: center"><a href="{{route('stock.eliminar',$p->idProducto)}}"><img style="width: 30px" src="/img/x.png"></a></td>
 			</tr><br>
