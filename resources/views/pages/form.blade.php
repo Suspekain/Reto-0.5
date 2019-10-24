@@ -2,6 +2,7 @@
 <html>
 <head>
   @include("layouts.head")
+  @include("layouts.footer")
 </head>
 <body>
   <header>
@@ -17,5 +18,7 @@
     </select><br>
   </fieldset>
 </form>
+
+
 </body>
 </html>
