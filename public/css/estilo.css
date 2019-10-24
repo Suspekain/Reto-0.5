@@ -1,3 +1,4 @@
+@media screen and (min-width: 700px) and (max-width: 2000px){
 @font-face {
   font-family: FuenteGeneral;
   src: url('/fonts/BaronNeue.ttf');
@@ -119,6 +120,143 @@ footer {
   margin-top: 10px;
 }
 /**/
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 350){
+  .logotienda{
+    width: 100%;
+  }
+}
+
+
+
+
+@media screen and (min-width: 200px) and (max-width: 700px){
+* {
+  margin: 0;
+  padding: 0;
+  font-family: FuenteGeneral;
+}
+body{
+  width: 98%;
+  margin: 0px auto;
+}
+
+/*estilo del header*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #c30012;
+}
+
+.ametzondologo {
+  width: 100%;
+}
+
+
+.candadologo {
+  width: 3%;
+  height: 3%;
+  min-height: 25px;
+  min-width: 25px;
+  margin-right: 20px;
+}
+
+.tienda {
+  text-align: center;
+}
+
+.logotienda {
+  width: 200px;
+}
+
+.logotienda>img {
+  width: 100%;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 15% 0 15%;
+}
+
+.producto {
+
+}
+
+.imagenproducto {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*estilo del footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #c30012;
+  width: 100%;
+}
+
+.mapa {
+  width: 100%;
+}
+
+.footerderecha {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.mapa>iframe {
+  width: 100%;
+}
+
+.horario {
+  width: 90%;
+}
+
+.copy {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  background-color: black;
+  color: #c30012;
+  text-align: center;
+  width: 10%;
+  display: none;
+}
+/**/
+
+#rh{
+  text-align: center;
+}
+#bodyregistro{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background-color: #34495E;
+}
+
+#formregistro{
+  margin: 20px auto;
+  padding: 20px;
+}
+
+
+/*estilo de crear producto*/
+.productonuevo {
+  text-align: center;
+  margin-top: 10px;
+}
+/**/
+
+}
 
 /*STOCK*/
 .tablaproductos {
