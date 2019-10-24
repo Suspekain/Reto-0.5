@@ -74,4 +74,10 @@ class productoController extends Controller
     return redirect()->route('stock.tienda', $producto->ProductoTienda);
   }
 
+  public function mostrarProducto($idProducto)
+  {
+    //Recogemos el id del producto pasado por la ruta, recogemos los datos del producto en un array y los pasamos a la vista del producto
+    $producto = Productos::where('idProducto', $idProducto)->first();
+    return view('pages/producto', array('producto'=>$producto));
+  }
 }

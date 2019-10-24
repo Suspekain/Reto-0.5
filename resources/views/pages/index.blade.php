@@ -11,7 +11,10 @@
     @foreach($tiendas as $tienda)
     <div class="tienda">
       <div class="logotienda">
+<<<<<<< HEAD
         <div><img class="imagenproducto" src="/img/tiendas/{{$tienda->TiendaLogo}}"></div>
+=======
+>>>>>>> 9e5b63aa2f9db3291013949db8c653a372d12639
         <img src="/img/tiendas/{{$tienda->TiendaLogo}}">
       </div>
       <div class="productos">
@@ -20,6 +23,7 @@
           @if($producto->ProductoTienda === $tienda->idTienda)
           <div>{{$producto->ProductoNombre}}</div>
           <img class="imagenproducto" src="/img/productos/{{$producto->ProductoImagen}}">
+          <a href="{{route('producto.mostrar', $producto->idProducto)}}">Ver</a>
           @endif
           @endforeach
         </div>
