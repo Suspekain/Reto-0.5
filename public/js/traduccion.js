@@ -13,38 +13,38 @@ var dict = {
 
   "crearNuevoProducto": {
     es: "Crear nuevo producto:",
-    en: "",
-    eus: ""
+    en: "Create new product:",
+    eus: "Sortu produktu berria:"
   },
 
   "nombre": {
     es: "Nombre",
-    en: "",
-    eus: ""
+    en: "Name",
+    eus: "Izena"
   },
 
   "descripcion": {
     es: "Descripcion",
-    en: "",
-    eus: ""
+    en: "Description",
+    eus: "Azalpena"
   },
 
   "imagen": {
     es: "Imagen",
-    en: "",
-    eus: ""
+    en: "Image",
+    eus: "Irudia"
   },
 
   "stock": {
     es: "Stock",
-    en: "",
-    eus: ""
+    en: "Stock",
+    eus: "Stock"
   },
 
   "enlace": {
     es: "Enlace",
-    en: "",
-    eus: ""
+    en: "Link",
+    eus: "Esteka"
   },
 
   "crearProducto": {
@@ -55,56 +55,56 @@ var dict = {
 
   "editarStock": {
     es: "Editar Stock: ",
-    en: "",
-    eus: ""
+    en: "Edit Stock",
+    eus: "Editatu Stocka"
   },
 
   "eliminar": {
     es: "Eliminar",
-    en: "",
-    eus: ""
+    en: "Delete",
+    eus: "Ezabatu"
   },
 
   "lunes": {
-    es: "",
-    en: "",
-    eus: ""
+    es: "Lunes",
+    en: "Monday",
+    eus: "Astelehena"
   },
 
   "martes": {
-    es: "",
-    en: "",
-    eus: ""
+    es: "Martes",
+    en: "Tuesday",
+    eus: "Asteartea"
   },
 
   "miercoles": {
-    es: "",
-    en: "",
-    eus: ""
+    es: "Miercoles",
+    en: "Wednesday",
+    eus: "Asteazkena"
   },
 
   "jueves": {
-    es: "",
-    en: "",
-    eus: ""
+    es: "Jueves",
+    en: "Thursday",
+    eus: "Osteguna"
   },
 
   "viernes": {
-    es: "",
-    en: "",
-    eus: ""
+    es: "Viernes",
+    en: "Friday",
+    eus: "Ostirala"
   },
 
   "sabado": {
-    es: "",
-    en: "",
-    eus: ""
+    es: "Sabado",
+    en: "Saturday",
+    eus: "Larunbata"
   },
 
   "domingo": {
-    es: "",
-    en: "",
-    eus: ""
+    es: "Domingo",
+    en: "Sunday",
+    eus: "Igandea"
   }
 
 }
