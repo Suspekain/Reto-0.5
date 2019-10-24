@@ -6,16 +6,17 @@
     <div class="horario">
       <h4>Horarios:</h4>
       <p>
-        <span class="trn" data-trn-key="lunes">Lunes</span>: 10:00 - 20:00<br>
-        <span class="trn" data-trn-key="martes">Martes</span>: 10:00 - 20:00<br>
-        <span class="trn" data-trn-key="miercoles">Miercoles</span>: 10:00 - 20:00<br>
-        <span class="trn" data-trn-key="jueves">Jueves</span>: 10:00 - 20:00<br>
-        <span class="trn" data-trn-key="viernes">Viernes</span>: 10:00 - 20:00<br>
-        <span class="trn" data-trn-key="sabado">Sabado</span>: 10:00 - 20:00<br>
-        <span class="trn" data-trn-key="domingo">Domingo</span>: cerrado
+        Lunes: 10:00 - 20:00<br>
+        Martes: 10:00 - 20:00<br>
+        Miercoles: 10:00 - 20:00<br>
+        Jueves: 10:00 - 20:00<br>
+        Viernes: 10:00 - 20:00<br>
+        Sabado: 10:00 - 20:00<br>
+        Domingo: cerrado
       </p>
     </div>
     <div class="enlaces">
+      
     </div>
   </div>
   <p class="copy">&copy; Copyright . 2019</p>
