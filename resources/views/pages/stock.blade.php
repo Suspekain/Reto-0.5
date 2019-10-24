@@ -12,12 +12,12 @@
 		<a href="{{route('crear', $idTienda->idTienda)}}">@lang('stock.newPro')</a>
 		<table class="tablaproductos">
 			<tr class="productos-indice">
-				<th class="trn" data-trn-key="id">ID</th>
-				<th>Nombre</th>
-				<th>Descripcion</th>
-				<th>Imagen</th>
-				<th>Stock</th>
-				<th>Eliminar</th>
+				<th>ID</th>
+				<th class="trn" data-trn-key="nombre">Nombre</th>
+				<th class="trn" data-trn-key="descripcion">Descripcion</th>
+				<th class="trn" data-trn-key="imagen">Imagen</th>
+				<th class="trn" data-trn-key="stock">Stock</th>
+				<th  class="trn" data-trn-key="eliminar">Eliminar</th>
 			</tr>
 			@foreach($productos as $p)
 			<tr class="productos-productos">

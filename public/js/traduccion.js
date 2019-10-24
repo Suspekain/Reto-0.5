@@ -18,25 +18,25 @@ var dict = {
   },
 
   "nombre": {
-    es: "Nombre: ",
+    es: "Nombre",
     en: "",
     eus: ""
   },
 
   "descripcion": {
-    es: "Descripcion: ",
+    es: "Descripcion",
     en: "",
     eus: ""
   },
 
   "imagen": {
-    es: "Imagen: ",
+    es: "Imagen",
     en: "",
     eus: ""
   },
 
   "stock": {
-    es: "Stock: ",
+    es: "Stock",
     en: "",
     eus: ""
   },
@@ -59,167 +59,52 @@ var dict = {
     eus: ""
   },
 
-  "stock": {
+  "eliminar": {
+    es: "Eliminar",
+    en: "",
+    eus: ""
+  },
+
+  "lunes": {
     es: "",
     en: "",
     eus: ""
   },
 
-  "stock": {
+  "martes": {
     es: "",
     en: "",
     eus: ""
   },
 
-  "stock": {
+  "miercoles": {
     es: "",
     en: "",
     eus: ""
   },
 
-  "stock": {
+  "jueves": {
     es: "",
     en: "",
     eus: ""
   },
 
-  "stock": {
+  "viernes": {
     es: "",
     en: "",
     eus: ""
   },
 
-  "stock": {
+  "sabado": {
     es: "",
     en: "",
     eus: ""
   },
 
-  "stock": {
+  "domingo": {
     es: "",
     en: "",
     eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
-  "stock": {
-    es: "",
-    en: "",
-    eus: ""
-  },
-
+  }
 
 }
