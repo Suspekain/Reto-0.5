@@ -12,7 +12,7 @@
 		<a href="{{route('crear', $idTienda->idTienda)}}">@lang('stock.newPro')</a>
 		<table class="tablaproductos">
 			<tr class="productos-indice">
-				<th>ID</th>
+				<th class="trn" data-trn-key="id">ID</th>
 				<th>Nombre</th>
 				<th>Descripcion</th>
 				<th>Imagen</th>

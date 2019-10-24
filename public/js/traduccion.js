@@ -53,8 +53,8 @@ var dict = {
     eus: "Produktua sortu"
   },
 
-  "stock": {
-    es: "",
+  "editarStock": {
+    es: "Editar Stock: ",
     en: "",
     eus: ""
   },
