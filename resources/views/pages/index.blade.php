@@ -14,22 +14,24 @@
         <img src="/img/tiendas/{{$tienda->TiendaLogo}}">
       </div>
       <div class="productos">
+
+        @foreach($productos as $producto)
+        @if($producto->ProductoTienda === $tienda->idTienda)
         <div class="producto">
-          @foreach($productos as $producto)
-          @if($producto->ProductoTienda === $tienda->idTienda)
           <div>{{$producto->ProductoNombre}}</div>
           <img class="imagenproducto" src="/img/productos/{{$producto->ProductoImagen}}">
           <a href="{{route('producto.mostrar', $producto->idProducto)}}">Ver</a>
-          @endif
-          @endforeach
         </div>
+        @endif
+        @endforeach
+
       </div>
     </div>
-      <hr>
-      @endforeach
-    </section>
-    <footer>
-      @include("layouts.footer")
-    </footer>
-  </body>
-  </html>
+    <hr>
+    @endforeach
+  </section>
+  <footer>
+    @include("layouts.footer")
+  </footer>
+</body>
+</html>
