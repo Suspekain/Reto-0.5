@@ -16,6 +16,7 @@ class Tiendas extends Migration
         Schema::create('Tiendas', function (Blueprint $table) {
             $table->increments('idTienda');
             $table->string('TiendaNombre', 45);
+            $table->string('TiendaLogo', 256);
         });
     }
 

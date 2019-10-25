@@ -19,7 +19,7 @@ class Productos extends Migration
             $table->string('ProductoDescripcion', 256);
             $table->string('ProductoImagen', 256);
             $table->integer('ProductoStock');
-            $table->string('ProductoEnlace', 45);
+            $table->string('ProductoEnlace', 256);
         });
     }
 

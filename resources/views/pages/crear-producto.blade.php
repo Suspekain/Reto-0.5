@@ -2,27 +2,31 @@
 <html>
 <head>
   @include("layouts.head")
-  <script type="text/javascript" src="js/validar-producto-nuevo.js"></script>
+  <script type="text/javascript" src="/js/validar-producto-nuevo.js"></script>
 </head>
 <body>
   <header>
     @include("layouts.header")
   </header>
-  <form class="productonuevo" action="{{route('stock.crear',$idTienda ?? ''->idTienda)}}" method="post" enctype="multipart/form-data">
+  <form class="productonuevo" id="myform" action="{{route('stock.crear',$idTienda ?? ''->idTienda)}}" method="post" enctype="multipart/form-data">
     @csrf
     <input type="text" id="idTienda" name="idTienda" value="{{$idTienda ?? ''->idTienda}}" hidden>
-    <label>Crear nuevo producto:</label><br><br><br>
-    <label>Nombre: </label>
-    <input type="text" maxlength="45" name="nombre" id="nombre"><br><br><br>
-    <label>Descripcion: </label><br>
-    <textarea rows="8" cols="80" name="desc" id="descripcion"></textarea><br><br><br>
-    <label>Imagen: </label>
-    <input type="file" name="img" id="img"/><br><br><br>
-    <label>Stock: </label>
-    <input type="number" name="stock" id="stock"/><br><br><br>
-    <label>Enlace</label>
-    <input type="text" name="enlace" value="http://" id="enlace"/><br><br><br>
-    <input type="submit" onclick="validarProducto()" value="Crear producto">
+    <label class="trn" data-trn-key="crearNuevoProducto">Crear nuevo producto:</label><br><br><br>
+    <label class="trn" data-trn-key="nombre">Nombre: </label>
+    <input type="text" maxlength="45" name="nombre" id="nombre" required><div id="nombreMal">Introduce el nombre.</div><br><br><br>
+    <label class="trn" data-trn-key="descripcion">Descripcion: </label><br>
+    <input type="textarea" name="desc" id="descripcion" required>
+    <div id="descMal">Itroduce una descripcion.</div><br><br><br>
+    <label class="trn" data-trn-key="imagen">Imagen: </label>
+    <input type="file" name="img" id="img"required/>
+    <div id="imgMal">Introduce una imagen.</div><br><br><br>
+    <label class="trn" data-trn-key="stock">Stock: </label>
+    <input type="number" name="stock" id="stock" required/>
+    <div id="stockMal">Introduce el stock.</div><br><br><br>
+    <label class="trn" data-trn-key="enlace">Enlace</label>
+    <input type="text" name="enlace" value="http://" id="enlace" required/>
+    <div id="enlaceMal">Introduce el enlace.</div><br><br><br>
+    <input type="submit" id="submit" disabled value="Crear producto">
   </form>
 </body>
 </html>

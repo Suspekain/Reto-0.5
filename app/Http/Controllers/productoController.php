@@ -9,6 +9,12 @@ use App\Productos;
 
 class productoController extends Controller
 {
+  public function index(){
+    //codigo para hacer la consulta
+    $tiendas = DB::table('Tiendas')->get();
+    $productos = Productos::all();
+      return view('pages/index', array('tiendas'=>$tiendas), array('productos'=>$productos));
+  }
 
   public function mostrarTienda(){
     //codigo para hacer la consulta
@@ -68,4 +74,10 @@ class productoController extends Controller
     return redirect()->route('stock.tienda', $producto->ProductoTienda);
   }
 
+  public function mostrarProducto($idProducto)
+  {
+    //Recogemos el id del producto pasado por la ruta, recogemos los datos del producto en un array y los pasamos a la vista del producto
+    $producto = Productos::where('idProducto', $idProducto)->first();
+    return view('pages/producto', array('producto'=>$producto));
+  }
 }

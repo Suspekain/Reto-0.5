@@ -13,7 +13,8 @@ class TiendasTableSeeder extends Seeder
     {
         for($i = 0; $i < 5; $i++){
         	DB::table('Tiendas')->insert([
-	            'TiendaNombre' => 'Tienda'.($i+1)
+	            'TiendaNombre' => 'Tienda'.($i+1);
+                'ProductoImagen'=>'imagen';
         	]);
         }
     }
