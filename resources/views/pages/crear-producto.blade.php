@@ -2,7 +2,7 @@
 <html>
 <head>
   @include("layouts.head")
-  <script type="text/javascript" src="js/validar-producto-nuevo.js"></script>
+  <script type="text/javascript" src="/js/validar-producto-nuevo.js"></script>
 </head>
 <body>
   <header>
