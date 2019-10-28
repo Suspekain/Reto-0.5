@@ -11,11 +11,9 @@ class TiendasTableSeeder extends Seeder
      */
     public function run()
     {
-        for($i = 0; $i < 5; $i++){
         	DB::table('Tiendas')->insert([
-	            'TiendaNombre' => 'Tienda'.($i+1);
-                'ProductoImagen'=>'imagen';
+	            'TiendaNombre' => 'Afflelou',
+                'TiendaLogo'=>'afflelou.png',
         	]);
-        }
     }
 }

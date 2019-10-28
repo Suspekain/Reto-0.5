@@ -32,6 +32,6 @@ class Historico extends Migration
      */
     public function down()
     {
-        //
+          Schema::dropIfExists('Historico');
     }
 }
